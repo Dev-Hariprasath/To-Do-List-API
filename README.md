@@ -74,23 +74,28 @@ The API will be available at `http://127.0.0.1:5000/`.
 
 - **GET** `/`
   - Returns a welcome message.
+  -  - ![GET Request](./Img/welcome.png)
 
+    
 ### 2. Get All Tasks
 
 - **GET** `/tasks`
   - Returns a list of all tasks.
+  - ![GET Request](./Img/Get.png)
 
 ### 3. Create a Task
 
 - **POST** `/tasks`
   - Request body should include:
     - `title`: The title of the task (required).
+    - ![POST Request](./Img/post.png)
   - Example request:
 
     ```json
     {
         "title": "My new task"
     }
+    
     ```
 
 ### 4. Update a Task
@@ -99,6 +104,7 @@ The API will be available at `http://127.0.0.1:5000/`.
   - Request body can include:
     - `title`: The new title of the task (optional).
     - `status`: The new status of the task (optional).
+    - ![PUT Request](./Img/put.png)
   - Example request:
 
     ```json
@@ -112,6 +118,7 @@ The API will be available at `http://127.0.0.1:5000/`.
 
 - **DELETE** `/tasks/<task_id>`
   - Deletes the specified task.
+  - - ![DELETE Request](./Img/delete.png)
 
 ## License
 
